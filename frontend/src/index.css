@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #F4F1EA;
+  --color-primary: #151515;
+  --color-secondary: #6B6B67;
+  --color-accent: #E63946;
+  --color-warning: #F5A623;
+  --color-critical: #D0021B;
+  --color-success: #27AE60;
+  --color-surface: #EAE5D9;
+  
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-background font-bold px-6 py-3 border border-primary hover:bg-accent transition-colors duration-150 uppercase tracking-wider flex items-center justify-between cursor-pointer;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-primary font-bold px-6 py-3 border border-primary hover:bg-surface transition-colors duration-150 uppercase tracking-wider flex items-center justify-between cursor-pointer;
+  }
+
+  .panel {
+    @apply border border-primary bg-background p-6;
+  }
+}
+
