@@ -718,7 +718,7 @@ Returns a `DiagnosisResponse` JSON object (see Section 9).
 
 ---
 
-*FixFlow — built for AI Day Noida Buildathon 2026. *
+*FixFlow — built for AI Day Noida Buildathon 2026.*
 ## Special Integration: Cognee Memory
 
 This project uses [Cognee](https://cognee.ai) to bring Agentic Memory to diagnostic workflows.
